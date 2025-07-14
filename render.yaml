@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: clonador-bot
+    env: python
+    plan: free
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "python TelegramForwarder_sem_forward.py"
